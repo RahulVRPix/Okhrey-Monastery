@@ -13,18 +13,7 @@
     <title>Unity WebGL Player | Okhrey Monastery Virtual Tour</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-
-
-    <script>
-        document.addEventListener('touchend', function () {
-            if (!document.fullscreenElement) {
-                var canvas = document.querySelector("#unity-canvas");
-                if (canvas.requestFullscreen) {
-                    canvas.requestFullscreen();
-                }
-            }
-        }, { once: true });
-    </script>
+    
 </head>
 
   <body>
@@ -44,6 +33,15 @@
       </div>
     </div>
     <script>
+
+        document.addEventListener('touchend', function () {
+            if (!document.fullscreenElement) {
+                var canvas = document.querySelector("#unity-canvas");
+                if (canvas.requestFullscreen) {
+                    canvas.requestFullscreen();
+                }
+            }
+        }, { once: true });
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
