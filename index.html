@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    <meta name="viewport"
+  <head>
+	<meta name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0,
                maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
+	
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Okhrey Monastery Virtual Tour</title>
+    <title>Unity WebGL Player | Monastery Virtual Tour</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-</head>
+  </head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
@@ -27,12 +27,11 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Okhrey Monastery Virtual Tour</div>
+        <div id="unity-build-title">Monastery Virtual Tour</div>
       </div>
     </div>
     <script>
-
-        document.addEventListener('touchend', function () {
+		document.addEventListener('touchend', function () {
             if (!document.fullscreenElement) {
                 var canvas = document.querySelector("#unity-canvas");
                 if (canvas.requestFullscreen) {
@@ -40,7 +39,6 @@
                 }
             }
         }, { once: true });
-
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -73,14 +71,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/OkhreyMonastery-WebGL2412_1.loader.js";
+      var loaderUrl = buildUrl + "/OkhreyMonastery-WebGL2712_1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/OkhreyMonastery-WebGL2412_1.data",
-        frameworkUrl: buildUrl + "/OkhreyMonastery-WebGL2412_1.framework.js",
-        codeUrl: buildUrl + "/OkhreyMonastery-WebGL2412_1.wasm",
+        dataUrl: buildUrl + "/OkhreyMonastery-WebGL2712_1.data",
+        frameworkUrl: buildUrl + "/OkhreyMonastery-WebGL2712_1.framework.js",
+        codeUrl: buildUrl + "/OkhreyMonastery-WebGL2712_1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ASF",
-        productName: "Okhrey Monastery Virtual Tour",
+        productName: "Monastery Virtual Tour",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
       };
